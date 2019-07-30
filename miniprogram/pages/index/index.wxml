@@ -1,0 +1,27 @@
+<!--miniprogram/pages/index/index.wxml-->
+<view class="page">
+  <view class="weui-panel weui-panel_access">
+    <view class="weui-panel__bd">
+      <view class="weui-media-box weui-media-box_text">
+        <view class="weui-media-box__title weui-media-box__title_in-text">为什么使用优惠券</view>
+        <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+      </view>
+      <view class="weui-media-box weui-media-box_text">
+        <view class="weui-media-box__title weui-media-box__title_in-text">活动模块是做什么的</view>
+        <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+      </view>
+      <view class="weui-media-box weui-media-box_text">
+        <view class="weui-media-box__title weui-media-box__title_in-text">优惠券模块是做什么的</view>
+        <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-flex">
+    <view class="weui-flex__item content-center">
+      <button type="warn" size="mini" plain="true" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" data-path="../activity/activity"> 创建活动 </button>
+    </view>
+    <view class="weui-flex__item content-center">
+      <button type="primary" size="mini" plain="true" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" data-path="../coupon/coupon"> 生成优惠券 </button>
+    </view>
+  </view>
+</view>
