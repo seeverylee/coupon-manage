@@ -1,1 +1,21 @@
 /* miniprogram/pages/activity/activity.wxss */
+.coupon-header {
+  height: 80px;
+  background-color: lightpink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coupon-create-botton {
+  padding: 5px 20px;
+  border-radius: 4px;
+  background-color: aquamarine;
+  color: #ffffff;
+  box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.weui-tab__content{
+  padding-top: 60px;
+  text-align: center;
+}

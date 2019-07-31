@@ -1,18 +1,27 @@
 // miniprogram/pages/activity/activity.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    tabs: ["进行中的活动", "未开始的活动", "已结束的活动"],
+    activeIndex: 1,
+    sliderOffset: 0,
+    sliderLeft: 0
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onLoad: function () {
+    var that = this;
+    wx.getSystemInfo({
+      success: function (res) {
+        that.setData({
+          sliderLeft: (res.windowWidth / that.data.tabs.length - sliderWidth) / 2,
+          sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex
+        });
+      }
+    });
+  },
+  tabClick: function (e) {
+    this.setData({
+      sliderOffset: e.currentTarget.offsetLeft,
+      activeIndex: e.currentTarget.id
+    });
   },
 
   /**
