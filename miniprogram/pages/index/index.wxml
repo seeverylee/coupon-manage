@@ -21,7 +21,7 @@
       <button type="warn" size="mini" plain="true" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" data-path="../activity/activity"> 创建活动 </button>
     </view>
     <view class="weui-flex__item content-center">
-      <button type="primary" size="mini" plain="true" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" data-path="../coupon/coupon"> 生成优惠券 </button>
+      <button type="primary" size="mini" plain="true" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" data-path="../creatCoupon/creatCoupon"> 生成优惠券 </button>
     </view>
   </view>
 </view>

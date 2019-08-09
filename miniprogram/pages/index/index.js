@@ -13,17 +13,27 @@ Page({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
       })
+      return
     }
+    wx.getUserInfo({
+      success: (res) => {
+        this.bindGetUserInfo(res)
+      },
+      fail: (e) => {
+        // 
+      }
+    })
   },
-  bindGetUserInfo: function (e) {
-    app.globalData.userInfo = e.detail.userInfo
+  bindGetUserInfo: function (res) {
+    console.log(res);
+    app.globalData.userInfo = res.userInfo
     this.setData({
-      userInfo: e.detail.userInfo,
+      userInfo: res.userInfo,
       hasUserInfo: true
     }, () => {
-      wx.switchTab({
-        url: e.currentTarget.dataset.path,
-      })
+      // wx.switchTab({
+      //   url: e.currentTarget.dataset.path,
+      // })
     })
   }
 })

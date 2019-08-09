@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/activity/activity",
     "pages/coupon/coupon",
+    "pages/creatCoupon/creatCoupon",
     "pages/userInfo/userInfo"
   ],
   "window": {
@@ -15,6 +16,12 @@
   "tabBar": {
     "selectedColor": "#1296db",
     "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_active.png"
+      },
       {
         "pagePath": "pages/activity/activity",
         "text": "活动",
